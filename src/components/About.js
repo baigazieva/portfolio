@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
-
+import bkg from './image/space.jpeg'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -30,7 +30,7 @@ function urlFor(source) {
 	return (
 		<main className="relative">
 			<img
-				
+				src={bkg}
 				alt="waves crashing against a sandy beach"
 				className="absolute w-screen h-screen"
 			/>
@@ -43,12 +43,12 @@ function urlFor(source) {
 					/>
 					<div className="text-lg flex flex-col justify-center">
 						<h1 className="cursive text-6xl text-green-600 mb-4 md: mt-2 float-right">
-							Hi, I'm <span className="text-green-100">{author.name}</span>
+							Hey there. I'm  <span className="text-green-100">{author.name}</span>
 						</h1>
 						<div className="prose lg:prose-xl text-white">
 							<BlockContent
 								blocks={author.bio}
-								projectId="evkrc0h6"
+								projectId="75olqk0o"
 								dataset="production"
 							/>
 						</div>

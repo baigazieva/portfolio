@@ -1,6 +1,5 @@
 // import { getByTitle } from '@testing-library/dom'
 import React, {useEffect,useState} from 'react'
-// import project from '../../studio/schemas/project';
 import sanityClient from "../client.js"
 
 
